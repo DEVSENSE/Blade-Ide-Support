@@ -65,7 +65,7 @@ namespace Devsense\PHP\Editor\Extension
         {
             if (($to = strpos($source, "}}", $at + 3)))
             {
-                return new EditorBlock("\\Devsense\\PHP\\Editor\\Extension\\BladeText", $at + 3, $to - $at - 3, '\n', '\n');
+                return new EditorBlock("\\Devsense\\PHP\\Editor\\Extension\\BladeText", $at, $to - $at + 2, '\n', '\n');
             }
             return null;
         }

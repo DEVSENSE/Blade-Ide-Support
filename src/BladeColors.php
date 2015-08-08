@@ -32,7 +32,7 @@ namespace Devsense\PHP\Editor\Extension
         function GetColors()
         {
             // note: empty string applies for all the text within classifier
-            return [new EditorWordColor("", "text")];
+            return [new EditorWordColor("", "string")];
         }
     }
 
